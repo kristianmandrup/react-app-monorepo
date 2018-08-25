@@ -34,7 +34,7 @@ This command will download (external) and setup all the dependencies for the pro
 
 ### Baseline
 
-The package found in `packages/_baseline` can be used as a boilerplate (baseline) for most components.
+The package found in `packages/_blueprint` can be used as a blueprint for most components.
 
 It currently includes:
 

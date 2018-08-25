@@ -1,5 +1,0 @@
-// tslint.json
-{
-  "extends": "@tecla5/project/config/tslint.config",
-  "rules": {}
-}

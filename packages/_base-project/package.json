@@ -1,0 +1,14 @@
+{
+  "name": "@tecla5/ui-base-project",
+  "version": "1.0.0",
+  "description": "Awesome Tools",
+  "files": [
+    "config/tslint.config.js",
+    "config/jest.config.js",
+    "config/prettier.config.js"
+  ],
+  "scripts": {
+    "test": "./task test"
+  },
+  "dependencies": {}
+}

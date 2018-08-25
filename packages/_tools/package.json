@@ -1,0 +1,15 @@
+{
+  "name": "@tecla5/awesome-tools",
+  "version": "1.0.0",
+  "description": "Awesome productivity tools",
+  "files": [
+    "copy-baseline.js"
+  ],
+  "scripts": {
+    "copy:baseline": "node ./copy-baseline.js"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "node-dir": "^0.1.17"
+  }
+}
