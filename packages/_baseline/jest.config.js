@@ -1,1 +1,1 @@
-module.exports = require('@tecla5/tools/jest.config.js')
+module.exports = require('@tecla5/project/config/jest.config.js')

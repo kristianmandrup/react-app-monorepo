@@ -1,5 +1,22 @@
 # Mono repo structure
 
+Also see [An Opinionated Web Application Solution](https://codeburst.io/an-opinionated-web-application-solution-part-1-9aa78c11b9fd)
+
+Includes [sample scaffold project](https://github.com/larkintuckerllc/fe-ts-scaffold)
+
+We want to replace Redux with MobX State Tree however ;)
+
+The following commands are available from the project’s root folder.
+
+- `yarn install`: Use first to install project’s dependencies
+- `yarn start`: Start development mode; live linting, build, and browser reloading (only files in bundle)
+- `yarn build`: Lint and build production files in dist folder (only files in bundle)
+- `yarn lint`: Run linter (check all files)
+- `yarn tsc`: Run compiler (check all files)
+- `yarn test`: Run tests
+- `yarn coverage`: Run tests and coverage report
+- `yarn analyze`: Runs bundle analyzer
+
 ## Yarn workspaces
 
 Workspaces are a new way to setup your package architecture. It allows you to setup multiple packages in such a way that you only need to run yarn install once to install all of them in a single pass.
