@@ -5,7 +5,7 @@
   "scripts": {
     "scaffold": "node scaffold.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "@tecla5/awesome-tools": "^1.0.0"
   }
 }

@@ -1,8 +1,11 @@
 # Scaffold
 
-Copy `scaffold.js` and `package.json` (dependencies) from `_scaffold` package into target package (to be scaffolded).
+Copy `scaffold.js` from `_scaffold` package into target package (to be scaffolded).
 
-Run `lerna bootstrap --hoist` as usual to update dependencies
+Optional:
+
+- copy `package.json` (dependencies)
+- run `lerna bootstrap --hoist` as usual to update dependencies
 
 Now from target package run:
 
