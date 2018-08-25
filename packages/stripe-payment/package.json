@@ -1,0 +1,12 @@
+{
+  "name": "@tecla5/ui-stripe-payment",
+  "version": "1.0.0",
+  "description": "Stripe payment",
+  "scripts": {
+    "test": "./task test"
+  },
+  "dependencies": {
+    "react-stripe-checkout": "^2.6.3",
+    "react-stripe-elements": "^2.0.1"
+  }
+}
