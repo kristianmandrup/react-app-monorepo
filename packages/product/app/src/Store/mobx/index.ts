@@ -1,2 +1,0 @@
-export {StateTree}
-from './StateTree'
