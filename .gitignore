@@ -8,6 +8,12 @@ npm-debug.log*
 # Build
 build/*
 
+# Logs
+*.log
+
+# Backups
+*.lerna_backup
+
 # Cache
 .cache-loader
 

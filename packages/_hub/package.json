@@ -5,7 +5,5 @@
   "scripts": {
     "test": "./task test"
   },
-  "dependencies": {
-    "product": "1.0.0",
-  }
+  "dependencies": {}
 }
