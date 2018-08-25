@@ -13,10 +13,23 @@ function filterAvoidOverwrite(files, targetPath) {
   })
 }
 
-export function scaffoldPackage(targetPath, {
-  filter,
-  overwrite
-}) {
+function filterIncludeExclude(files, config = {}) {
+  const {
+    exclude,
+    include
+  } = config
+  return files.filter(file => {
+    const fileName = path.basename(file)
+    return (exclude && !exclude.includes(fileName)) && (include && include.includes(fileName))
+  })
+}
+
+
+export function scaffoldPackage(targetPath, config = {}) {
+  let {
+    filter,
+    overwrite
+  }
   filter = filter || defaultFilter
   overwrite = overwrite || false
   targetPath = targetPath || process.cwd()

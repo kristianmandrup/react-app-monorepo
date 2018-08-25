@@ -5,9 +5,6 @@
   "files": [
     "copy-blueprint.js"
   ],
-  "scripts": {
-    "scaffold": "node scaffold.js"
-  },
   "dependencies": {
     "fs-extra": "^7.0.0",
     "node-dir": "^0.1.17"

@@ -37,6 +37,7 @@ This command will download (external) and setup all the dependencies for the pro
 - `_hub` exports all public packages
 - `_simple-express-server` sample express server. Can be used to build basic backend API
 - `_tools` various small tools such as used for `copy-blueprint` used to copy all blueprint files to target package
+- `_scaffold` tool to scaffold an existing package and keep it updated with the blueprint project.
 
 ### Baseline
 
