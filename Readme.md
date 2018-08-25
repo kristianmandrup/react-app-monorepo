@@ -30,6 +30,24 @@ lerna success Bootstrapped 5 packages
 
 This command will download (external) and setup all the dependencies for the projects. The hoist option brings up all the shared dependencies to the root of the sample repo; no reason to store three copies of webpack on the disk.
 
+## Packages
+
+- `_baseproject` shared project configurations (used by each UI package)
+- `_blueprint` blueprint UI package to create new UI packages from
+- `_hub` exports all public packages
+- `_simple-express-server` sample express server. Can be used to build basic backend API
+- `_tools` various small tools such as used for `copy-blueprint` used to copy all blueprint files to target package
+
+### Baseline
+
+The package found in `packages/_blueprint` can be used as a blueprint for most components.
+
+It currently includes:
+
+- `App`
+- `Component`
+- `Store`
+
 ## App structure
 
 ### Baseline

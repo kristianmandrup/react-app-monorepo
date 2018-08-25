@@ -1,0 +1,8 @@
+{
+  "name": "@tecla5/scaffold",
+  "version": "1.0.0",
+  "description": "Script to use for scaffolding",
+  "dependencies": {
+    "@tecla5/awesome-tools": "^1.0.0"
+  }
+}

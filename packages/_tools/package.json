@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Awesome productivity tools",
   "files": [
-    "copy-baseline.js"
+    "copy-blueprint.js"
   ],
   "scripts": {
-    "copy:baseline": "node ./copy-baseline.js"
+    "scaffold": "node scaffold.js"
   },
   "dependencies": {
     "fs-extra": "^7.0.0",

@@ -6,8 +6,19 @@ function defaultFilter(files) {
   return files.filter(file => /node_modules/.test(file))
 }
 
-export function scaffoldPackage(targetPath, filter) {
+function filterAvoidOverwrite(files, targetPath) {
+  return files.filter(file => {
+    const targetFilePath = path.join(targetPath, file)
+    return !fs.existsSync(targetFilePath)
+  })
+}
+
+export function scaffoldPackage(targetPath, {
+  filter,
+  overwrite
+}) {
   filter = filter || defaultFilter
+  overwrite = overwrite || false
   targetPath = targetPath || process.cwd()
   const baselinePackagePath = path.resolve(__dirname, '../_blueprint')
 
@@ -15,11 +26,15 @@ export function scaffoldPackage(targetPath, filter) {
     sync: true
   })
   files = filter(files)
+  if (overwrite) {
+    files = filterAvoidOverwrite(files)
+  }
 
   files.map(file => {
     console.log('copying', file)
-    fs.copy(file, targetPath, (err) => {
-      err ? console.error('ERROR', err) : console.log('copied', file);
-    })
+
+    fs.copy(file, targetPath)
+      .then(() => console.log('success!'))
+      .catch(err => console.error(err))
   })
 }
