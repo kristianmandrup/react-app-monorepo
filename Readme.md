@@ -48,6 +48,7 @@ It currently includes:
 - `App`
 - `Component`
 - `Store`
+- `Services`
 
 ## App structure
 
