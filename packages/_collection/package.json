@@ -1,12 +1,12 @@
 {
-  "name": "@tecla5/ui-product",
+  "name": "@tecla5/react-collection-component",
   "version": "1.0.0",
   "author": {
     "name": "Kristian Mandrup",
     "email": "kmandrup@gmail.com",
     "url": "https://tecla5.site"
   },
-  "description": "UI product component for web service shop",
+  "description": "React collection component",
   "keywords": [
     "react",
     "reactjs",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tecla5/ui-shop.git"
+    "url": "git://github.com/tecla5/react-collection-component.git"
   },
   "files": [
     "dist"

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 
 function render(type = 'Static', id = 'root') {
   const rootNode = document.getElementById(id)
-  ReactDOM.render(App[type], rootNode)
+  ReactDOM.render(App.variant[type], rootNode)
 }
 
 // TODO: we can render multiple apps on the main page!

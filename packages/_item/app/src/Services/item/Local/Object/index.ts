@@ -1,5 +1,5 @@
 import {Request} from './Request'
 
-export const List = {
+export const Object = {
   Request
 }

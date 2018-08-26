@@ -3,16 +3,20 @@
 ## Framework
 
 - [React](https://reactjs.org/)
-- [Recompose](https://recompose.docsforhumans.com/)
-- [React widgets](https://jquense.github.io/react-widgets/)
+- [Recompose](https://recompose.docsforhumans.com/) compose higher order components
 - [React DOM Router](https://reacttraining.com/react-router/web/guides/philosophy)
 
-## PWA
+## Styling
 
-- [Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/)
-- [Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker-slides)
-- [Workbox](https://developers.google.com/web/tools/workbox/)
-- [Fav icons](https://realfavicongenerator.net/)
+### UI/Layout
+
+- [Material UI](https://material-ui.com/)
+- [React widgets](https://jquense.github.io/react-widgets/) Form widgets
+
+### CSS
+
+- [JSS](https://github.com/cssinjs/jss)
+- [React JSS](http://cssinjs.org/react-jss/)
 
 ## Store
 
@@ -27,34 +31,36 @@
 
 ### Coverage
 
-- [CodeCov](https://codecov.io/)
-
-## Styling
-
-- [JSS](https://github.com/cssinjs/jss)
-- [React JSS](http://cssinjs.org/react-jss/)
+- [CodeCov](https://codecov.io/) Testing code coverage
 
 ## Bundling
 
 - [Webpack](https://webpack.js.org/) Bundle app for distribution and use on web page
-- [Source map loader]() Source maps
+- [Source map loader](https://github.com/webpack-contrib/source-map-loader) Source maps for Webpack
 
 ## Code
 
-- [TypeScript](https://www.typescriptlang.org/) Static typing
+- [TypeScript](https://www.typescriptlang.org/) Static typing and modern JS
 - [TS Lint](https://palantir.github.io/tslint/) Linting
 
 ## Development workflow
 
-- [React hot loader](https://gaearon.github.io/react-hot-loader/) Hot loading
-- [React dev utils](https://www.npmjs.com/package/react-dev-utils) Dev utils
+- [React hot loader](https://gaearon.github.io/react-hot-loader/) Hot loading during development
+- [React dev utils](https://www.npmjs.com/package/react-dev-utils) Dev utils for debugging
 
 ## Server
 
-- [Express server](https://expressjs.com/) Express Web server
+- [Express server](https://expressjs.com/) Express Web server (API)
 
 ### Development
 
-- [JSON server](https://github.com/typicode/json-server) JSON REST server
+- [JSON server](https://github.com/typicode/json-server) JSON REST server (ie. Fake REST API)
 - [Husky](https://www.npmjs.com/package/husky) prevent bad commits
 - [Lerna](https://lernajs.io) Mono repo management
+
+## PWA
+
+- [Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/)
+- [Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker-slides) For smart resource caching
+- [Workbox](https://developers.google.com/web/tools/workbox/) PWA toolbox
+- [Fav icons](https://realfavicongenerator.net/) Browser and Mobile icons
