@@ -50,18 +50,6 @@ It currently includes:
 - `Store`
 - `Services`
 
-## App structure
-
-### Baseline
-
-The package found in `packages/_blueprint` can be used as a blueprint for most components.
-
-It currently includes:
-
-- `App`
-- `Component`
-- `Store`
-
 Each package should have an `index.ts` in `/app/src`:
 
 ```ts
@@ -70,6 +58,26 @@ export { Store } from "./Store";
 ```
 
 Note: We might in the future want to extract the `Store` part to separate independent packages.
+
+## App structure
+
+An app can be constructed from the following main building blocks:
+
+- item (present a single entity and actions to perform upon it)
+- list (present and list of an entity and actions to perform upon them)
+- display (present one or more lists and items)
+
+### Item
+
+Use the `_item` package as the blueprint
+
+### List
+
+Use the `_list` package as the blueprint
+
+### Display
+
+Use the `_display` package as the blueprint (TODO)
 
 ## VS Code
 
