@@ -1,4 +1,4 @@
 import {StateTree} from './StateTree'
-export const MobX = {
+export const Store = {
   StateTree
 }

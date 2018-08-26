@@ -1,5 +1,5 @@
 import {Request} from './Request'
-export const item = (config : any) => {
+export const single = (config : any) => {
   return {
     request: Request.create(config)
   }

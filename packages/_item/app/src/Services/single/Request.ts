@@ -1,5 +1,9 @@
 import {Base} from './Base'
 
+interface IData {
+  data : any
+}
+
 export class Request extends Base {
   protected id : string = '1'
 
@@ -7,17 +11,16 @@ export class Request extends Base {
     this.id = id
   }
 
-  public async create(id : string, obj : any) {
-    this.setId(id)
-    return await this.update(obj)
+  public async create({data} : IData) {
+    return data
   }
 
   public async read() {
     return {}
   }
 
-  public async update(obj : any) {
-    return obj
+  public async update({data} : IData) {
+    return data
   }
 
   public async delete() {

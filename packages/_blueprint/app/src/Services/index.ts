@@ -1,5 +1,2 @@
-import {products} from './products'
-
-export const Services = {
-  products
-}
+// TODO: compose from item and list services
+export const Services = {}
