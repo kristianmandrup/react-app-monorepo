@@ -1,4 +1,5 @@
 import {App} from './App'
+import ReactDOM from 'react-dom'
 // render app
 
 function render(type = 'Static', id = 'root') {

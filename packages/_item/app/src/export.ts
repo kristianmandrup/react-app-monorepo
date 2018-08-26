@@ -1,5 +1,5 @@
 export {Component}
-from './App/Component'
+from './Component'
 export {Store}
 from './Store'
 
