@@ -10,6 +10,10 @@ See [An Opinionated Web Application Solution](https://codeburst.io/an-opinionate
 
 Note: 6 parts series!
 
+## Docs
+
+See [Docs](./docs/)
+
 ## Getting started
 
 ```bash
@@ -33,11 +37,16 @@ This command will download (external) and setup all the dependencies for the pro
 ## Packages
 
 - `_baseproject` shared project configurations (used by each UI package)
-- `_blueprint` blueprint UI package to create new UI packages from
 - `_hub` exports all public packages
 - `_simple-express-server` sample express server. Can be used to build basic backend API
 - `_tools` various small tools such as used for `copy-blueprint` used to copy all blueprint files to target package
 - `_scaffold` tool to scaffold an existing package and keep it updated with the blueprint project.
+
+### Blueprints
+
+- `_blueprint` basic blueprint UI package to create new react component packages from
+- `_collection` collection blueprint
+- `_item` single item blueprint
 
 ### Baseline
 
@@ -50,11 +59,12 @@ It currently includes:
 - `Store`
 - `Services`
 
-Each package should have an `index.ts` in `/app/src`:
+Each package should have an `export.ts` in `/app/src`:
 
 ```ts
 export { Component } from "./Component";
 export { Store } from "./Store";
+export { Services } from "./Services";
 ```
 
 Note: We might in the future want to extract the `Store` part to separate independent packages.
@@ -63,21 +73,21 @@ Note: We might in the future want to extract the `Store` part to separate indepe
 
 An app can be constructed from the following main building blocks:
 
-- item (present a single entity and actions to perform upon it)
-- list (present and list of an entity and actions to perform upon them)
-- display (present one or more lists and items)
+- `item` present a single entity and actions to perform upon it
+- `collection` present a list of an entity and actions to perform upon it
+- `display` present one or more lists and items
 
 ### Item
 
-Use the `_item` package as the blueprint
+Use the `_item` package as blueprint
 
-### List
+### Collection
 
-Use the `_list` package as the blueprint
+Use the `_collection` package as blueprint
 
 ### Display
 
-Use the `_display` package as the blueprint (TODO)
+Use the `_display` package as blueprint (TODO)
 
 ## VS Code
 
@@ -95,4 +105,4 @@ We've had to exclude `mobx-schema-form` due to some dependency conflicts (needs 
 
 ## TODO
 
-Make sure `_baseline` can run as an app
+Make sure all blueprint packages can run independently as an app
