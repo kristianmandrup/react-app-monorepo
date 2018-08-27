@@ -13,10 +13,6 @@
 - [Material UI - React](https://material-ui.com/)
 - [Ant Design - React](https://ant.design/docs/react/introduce)
 
-See [Ant Design in TypeScript](https://ant.design/docs/react/use-in-typescript)
-
-Boilerplate project: [Create React App with TypeScript and Ant Design](https://github.com/comerc/cra-ts-antd)
-
 ## Widgets
 
 - [React widgets](https://jquense.github.io/react-widgets/) Special form widgets for drop downs, date selection etc.

@@ -1,0 +1,2 @@
+export {Extend}
+from '../Extend'

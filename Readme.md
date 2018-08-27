@@ -34,6 +34,19 @@ lerna success Bootstrapped 5 packages
 
 This command will download (external) and setup all the dependencies for the projects. The hoist option brings up all the shared dependencies to the root of the sample repo; no reason to store three copies of webpack on the disk.
 
+## Commands
+
+The main `package.json` includes the following npm wrappers of lerna commands:
+
+- `bootstrap` Bootstrap all projects
+- `compile` Compiles all projects
+- `clean` Clean all projects
+- `lint` Lint all projects
+- `test` Run tests on all projects
+- `update-version` Update version of all packages
+- `check-packages` Check if all packages are clean, lint ok and tests pass
+- `publish-packages` Publish all packages
+
 ## Packages
 
 - `_baseproject` shared project configurations (used by each UI package)

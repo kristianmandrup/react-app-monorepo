@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "lerna run bootstrap --hoist",
     "compile": "lerna run compile",
     "clean": "lerna run clean",
     "lint": "lerna run lint",
