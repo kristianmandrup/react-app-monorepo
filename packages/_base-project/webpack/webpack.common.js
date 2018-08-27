@@ -14,7 +14,8 @@ module.exports = opts => {
   return {
     target: 'web',
     entry: {
-      'bundle': './app/src/index.tsx'
+      // See https://survivejs.com/webpack/building/bundle-splitting/
+      'bundle': ['whatwg-fetch', './app/src/index.tsx']
     },
     resolve: {
       // Add '.ts' and '.tsx' as resolvable extensions.
@@ -30,6 +31,7 @@ module.exports = opts => {
       // This is the URL that app is served from. We use "/" in development.
       publicPath: './'
     },
+    // See https://survivejs.com/webpack/building/bundle-splitting/
     optimization: {
       splitChunks: {
         chunks: "all"

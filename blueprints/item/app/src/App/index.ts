@@ -1,4 +1,4 @@
-import {Static} from './Static'
+import {variant} from './variant'
 export const App = {
-  Static
+  variant
 }

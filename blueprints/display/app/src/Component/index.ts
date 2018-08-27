@@ -1,4 +1,6 @@
-import {Static} from './Static'
+import {variant} from './variant'
+import {styles} from './styles'
 export const Component = {
-  Static
+  variant,
+  styles
 }
