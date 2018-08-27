@@ -1,5 +1,5 @@
-import {single} from './single'
+import {item} from './item'
 
 export const Services = {
-  single
+  item
 }

@@ -1,4 +1,4 @@
-# Development (Dev)
+# Webpack Development (Dev) config
 
 ## Source maps
 

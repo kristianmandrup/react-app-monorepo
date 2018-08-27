@@ -5,6 +5,7 @@ module.exports = {
     "tslint-config-prettier"
   ],
   "rules": {
+    "no-implicit-dependencies": [true, "dev"],
     "typedef-whitespace": [
       true,
       {

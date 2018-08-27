@@ -5,4 +5,4 @@ import {
 
 const targetPath = path.resolve(__dirname, '..')
 
-scaffold()
+scaffold(targetPath)

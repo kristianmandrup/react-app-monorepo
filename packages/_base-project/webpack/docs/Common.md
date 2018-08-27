@@ -1,4 +1,4 @@
-# Common
+# Webpack Common config
 
 ## Paths
 

@@ -14,6 +14,11 @@ const host = process.env.HOST || 'localhost';
 
 module.exports = opts => {
   const commonPaths = createCommonPaths(opts)
+
+  console.log({
+    commonPaths
+  })
+
   return {
     // To enhance the debugging process. More info: https://webpack.js.org/configuration/devtool/
     devtool: 'inline-source-map',

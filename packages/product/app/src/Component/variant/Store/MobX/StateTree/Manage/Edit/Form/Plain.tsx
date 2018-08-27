@@ -1,7 +1,6 @@
 // TODO: use Formik
-
 import React from 'react'
 
-export const Material = (props : any) => (
+export const Plain = (props: any) => (
   <div>Stateful plain item form using Formik</div>
 )
