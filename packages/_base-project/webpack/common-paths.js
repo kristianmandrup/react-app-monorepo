@@ -14,7 +14,7 @@ module.exports = opts => {
   return {
     outputPath: resolve(rootPath, "build"),
     contentBasePath: resolve(rootPath, "public"),
-    srcPath: resolve(rootPath, "app/src"),
+    srcPath: resolve(rootPath, "src"),
     // we can't use resolve here because the plugin fails
     bundleVisualizerStatsPath: rootPath + "/dist/stats"
   }
