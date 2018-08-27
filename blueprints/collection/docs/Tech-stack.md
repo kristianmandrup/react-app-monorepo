@@ -23,6 +23,10 @@
 
 Formik handles form state for you. It is thus an "uncontrolled" component. This is by design, as form state is always local. You should instead only update your mobx store once the form has been submitted (in `handleSubmit`) through a mobx action.
 
+### List display (Scroll)
+
+- [React infinite scroller](https://cassetterocks.github.io/react-infinite-scroller/)
+
 ### CSS
 
 - [JSS](https://github.com/cssinjs/jss)
