@@ -92,6 +92,44 @@ An app can be constructed from the following building blocks (see blueprints):
 
 Compose building blocks into higher level building blocks to form a tree, one package per branch or leaf.
 
+## Linting TypeScript code
+
+TODO: We still need some work here!
+
+Use the setup described [here](https://codeburst.io/an-opinionated-web-application-solution-part-5-40e95f6802d6)
+
+The final linting packages and configurations for the sample project are:
+
+- `prettier`: Opinionated code formatter
+- `tslint`: TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors.
+- `tslint-config-prettier`: Do you want to use tslint and prettier without conflicts? - tslint-config-prettier disables all conflicting rules that may cause such problems.
+- `tslint-loader`: Tslint loader for Webpack.
+- `tslint-plugin-prettier`: Runs Prettier as a TSLint rule and reports differences as individual TSLint issues.
+- `tslint-react`: Lint rules related to React & JSX for TSLint.
+
+`tslint.json`
+
+```json
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "prettier": true,
+    "interface-name": false
+  }
+}
+```
+
+`.prettierrc`
+
+```json
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+```
+
 ## VS Code
 
 _Typescript Mono Repo Import Fixer_ is a vscode extension that fixes imports of TypeScript files from sibling packages in a mono repo (e.g. Lerna)
