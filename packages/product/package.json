@@ -25,7 +25,7 @@
     "node": "^10.9.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open --config ./webpack/webpack.config.js --env.env=dev",
+    "dev": "webpack-dev-server --mode development --quiet false --open --config ./webpack/webpack.dev.js --env.env=dev",
     "build:prod:bundleVisualizer": "npm run build -- --progress --profile --env.addons=bundleVisualizer",
     "build:prod:bundleAnalyzer": "npm run build -- --env.addons=bundleAnalizer",
     "stats": "npm run build:prod:bundleAnalyzer",
