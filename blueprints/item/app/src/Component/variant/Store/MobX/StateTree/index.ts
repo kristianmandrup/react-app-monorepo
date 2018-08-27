@@ -1,7 +1,7 @@
 import {Display} from './Display'
 import {Manage} from './Manage'
 
-export const Static = {
+export const StateTree = {
   Display,
   Manage
 }
