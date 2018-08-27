@@ -11,7 +11,16 @@
 ### UI/Layout
 
 - [Material UI](https://material-ui.com/)
-- [React widgets](https://jquense.github.io/react-widgets/) Form widgets
+
+## Widgets
+
+- [React widgets](https://jquense.github.io/react-widgets/) Special form widgets for drop downs, date selection etc.
+
+### Forms
+
+- [Formik](https://www.npmjs.com/package/formik) Forms for React made easy
+
+Formik handles form state for you. It is thus an "uncontrolled" component. This is by design, as form state is always local. You should instead only update your mobx store once the form has been submitted (in `handleSubmit`) through a mobx action.
 
 ### CSS
 
@@ -47,6 +56,8 @@
 
 - [React hot loader](https://gaearon.github.io/react-hot-loader/) Hot loading during development
 - [React dev utils](https://www.npmjs.com/package/react-dev-utils) Dev utils for debugging
+- [MobX React devtools](https://github.com/mobxjs/mobx-devtools/blob/master/README.md#mobx-state-tree)
+- [MobX State Tree devtools](https://github.com/mobxjs/mobx-react-devtools)
 
 ## Server
 
