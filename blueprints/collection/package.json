@@ -92,6 +92,6 @@
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
     "webpack-visualizer-plugin": "^0.1.11",
-    "@tecla5/@tecla5/ui-base-project": "^1.0.0"
+    "@tecla5/ui-base-project": "^1.0.0"
   }
 }
