@@ -1,6 +1,6 @@
 import {Material} from './Material'
 import {Plain} from './Plain'
-export const Table = {
+export const Controls = {
   Plain,
   Material
 }
