@@ -16,3 +16,11 @@
 - `prepush` Run all tests before push to repo
 - `debug:prod` debug webpack prod environment
 - `debug` debug webpack config
+
+## Husky commit hooks
+
+```
+    "poststart": "npm run dev",
+    "precommit": "lint-staged",
+    "prepush": "npm run test",
+```
