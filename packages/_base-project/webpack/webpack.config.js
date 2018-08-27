@@ -19,13 +19,20 @@ const addons = ( /* string | string[] */ addonsArg) => {
 };
 
 module.exports = opts => env => {
-  console.log(env);
+  console.log('CONFIG', {
+    env,
+    opts
+  });
   if (!env) {
     throw new Error(errorConstants.ERR_NO_ENV_FLAG);
   }
   const commonConfig = createCommonConfig(opts)
 
   const envConfig = require(`./webpack.${env.env}.js`);
+
+  console.log({
+    envConfig
+  });
   const mergedConfig = webpackMerge(commonConfig, envConfig, ...addons(env.addons));
   return mergedConfig;
 }

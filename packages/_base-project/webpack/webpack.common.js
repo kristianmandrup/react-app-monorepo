@@ -14,9 +14,7 @@ module.exports = opts => {
   return {
     target: 'web',
     entry: {
-      'bundle': './app/src/index.tsx'
-      // See https://survivejs.com/webpack/building/bundle-splitting/
-      // 'bundle': ['whatwg-fetch', './app/src/index.tsx']
+      'bundle': './src/index.tsx'
     },
     resolve: {
       // Add '.ts' and '.tsx' as resolvable extensions.
@@ -54,7 +52,4 @@ module.exports = opts => {
       )
     ]
   };
-
-
-
 }
