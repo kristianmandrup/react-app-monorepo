@@ -1,20 +1,22 @@
 {
-  "name": "@tecla5/react-component-blueprint",
+  "name": "@tecla5/ui-shop-product",
   "version": "1.0.0",
   "author": {
     "name": "Kristian Mandrup",
     "email": "kmandrup@gmail.com",
     "url": "https://tecla5.site"
   },
-  "description": "Blueprint for React components",
+  "description": "UI Shop Product",
   "keywords": [
     "react",
     "reactjs",
-    "typescript"
+    "typescript",
+    "shop",
+    "product"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tecla5/react-component-blueprint.git"
+    "url": "git://github.com/tecla5/ui-shop-product.git"
   },
   "files": [
     "dist"
