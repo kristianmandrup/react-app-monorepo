@@ -1,2 +1,3 @@
 const createConfig = require('./create-config')
-module.exports = createConfig('prod')
+const config = createConfig('prod')
+module.exports = config
