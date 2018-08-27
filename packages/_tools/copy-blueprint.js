@@ -33,7 +33,7 @@ export function scaffoldPackage(targetPath, config = {}) {
   filter = filter || defaultFilter
   overwrite = overwrite || false
   targetPath = targetPath || process.cwd()
-  const baselinePackagePath = path.resolve(__dirname, '../_blueprint')
+  const baselinePackagePath = path.resolve(__dirname, '../_blueprints/base')
 
   let files = dir.files(baselinePackagePath, {
     sync: true

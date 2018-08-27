@@ -42,15 +42,18 @@ This command will download (external) and setup all the dependencies for the pro
 - `_tools` various small tools such as used for `copy-blueprint` used to copy all blueprint files to target package
 - `_scaffold` tool to scaffold an existing package and keep it updated with the blueprint project.
 
-### Blueprints
+## Blueprints
 
-- `_blueprint` basic blueprint UI package to create new react component packages from
-- `_collection` collection blueprint
-- `_item` single item blueprint
+Blueprints can be found in the `blueprints` folder
 
-### Baseline
+- `base` basic blueprint UI package to create new react component packages from
+- `collection` collection blueprint
+- `item` single item blueprint
+- `display` used to create a display, including any number of collections and items
 
-The package found in `packages/_blueprint` can be used as a blueprint for most components.
+### Base
+
+The package found in `blueprints/base` can be used as a blueprint for most components.
 
 It currently includes:
 
@@ -67,27 +70,27 @@ export { Store } from "./Store";
 export { Services } from "./Services";
 ```
 
-Note: We might in the future want to extract the `Store` part to separate independent packages.
+### Item
+
+The package found in `blueprints/item` can be used as a blueprint for a single item component, such as user profile, user settings or similar.
+
+### Collection
+
+To display and manage a list of an entity and actions to perform upon it
+
+### Display
+
+To make a display of information/navigatuon etc. that includes one or more lists and items
 
 ## App structure
 
-An app can be constructed from the following main building blocks:
+An app can be constructed from the following building blocks (see blueprints):
 
 - `item` present a single entity and actions to perform upon it
 - `collection` present a list of an entity and actions to perform upon it
 - `display` present one or more lists and items
 
-### Item
-
-Use the `_item` package as blueprint
-
-### Collection
-
-Use the `_collection` package as blueprint
-
-### Display
-
-Use the `_display` package as blueprint (TODO)
+Compose building blocks into higher level building blocks to form a tree, one package per branch or leaf.
 
 ## VS Code
 
