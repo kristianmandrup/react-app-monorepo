@@ -18,17 +18,23 @@ const addons = ( /* string | string[] */ addonsArg) => {
   return addons.map((addonName) => require(`./addons/webpack.${addonName}.js`));
 };
 
-module.exports = opts => env => {
+module.exports = opts => {
+  const {
+    basePath,
+    env
+  } = opts
   console.log('CONFIG', {
-    env,
-    opts
+    opts,
+    basePath,
+    env
   });
+
   if (!env) {
     throw new Error(errorConstants.ERR_NO_ENV_FLAG);
   }
   const commonConfig = createCommonConfig(opts)
 
-  const envConfig = require(`./webpack.${env.env}.js`);
+  const envConfig = require(`./webpack.${env.env}.js`)(opts);
 
   console.log({
     envConfig
