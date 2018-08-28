@@ -1,0 +1,30 @@
+.container {
+  max-width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  text-decoration: underline;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.commom {
+  text-align: left;
+  float: left;
+  margin: 15px 15px;
+}
+
+.big {
+  composes: commom;
+}
+
+.medium {
+  composes: commom;
+}
+
+.small {
+  composes: commom;
+}
+

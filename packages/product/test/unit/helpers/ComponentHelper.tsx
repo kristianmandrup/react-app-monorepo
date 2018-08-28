@@ -2,7 +2,7 @@
 import {shallow} from 'enzyme'
 import * as React from 'react'
 
-export const renderComponentHelper = (Component: any, mountOptions = {}) => {
+const renderComponentHelper = (Component : any, mountOptions = {}) => {
 
   return ({
     children = null,
@@ -28,3 +28,5 @@ export const renderComponentHelper = (Component: any, mountOptions = {}) => {
     }
   }
 }
+
+export default renderComponentHelper

@@ -2,7 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 // render app
-function render(type = 'Static', id = 'root') {
+function render(type = 'Static', id = 'reactContainer') {
   // const MainApp = App[type]
   const rootNode = document.getElementById(id)
   const hello = () => (
