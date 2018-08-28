@@ -10,6 +10,15 @@ See [An Opinionated Web Application Solution](https://codeburst.io/an-opinionate
 
 Note: 6 parts series!
 
+## Packages
+
+The packages are based on [react-typescript-webpack2-cssModules-postCSS](git://github.com/jquintozamora/react-typescript-webpack2-cssModules-postCSS.git)
+boilerplate project.
+
+We include a working project in `packages/react-typescript-mobx`.
+
+I have attempted to mirror this in `packages/product` so far without luck. Keeps complaining about missing typescript loader to handle JSX syntax. Perhaps the webpack config structure has changed again, since 3.x.
+
 ## Docs
 
 See [Docs](./docs/)
